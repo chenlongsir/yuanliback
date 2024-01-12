@@ -1,15 +1,12 @@
 plugins {
     id 'com.android.library'
-    id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
 }
 
 android {
-    namespace 'com.example.feedback'
-    compileSdk 33
+    compileSdkVersion 31
     buildToolsVersion "31.0.0"
     defaultConfig {
-        applicationId "com.example.feedback"
         minSdkVersion 21
         targetSdkVersion 31
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -24,9 +21,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    kotlinOptions {
-        jvmTarget = '1.8'
-    }
+
 }
 
 afterEvaluate {
@@ -36,7 +31,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.example.feedback'
                 artifactId = 'feedback'
-                version = '1.0.2'
+                version = '1.0.5'
             }
         }
     }
