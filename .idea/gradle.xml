@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/pulltorefresh" />
           </set>
         </option>
+        <option name="resolveExternalAnnotations" value="false" />
       </GradleProjectSettings>
     </option>
   </component>
