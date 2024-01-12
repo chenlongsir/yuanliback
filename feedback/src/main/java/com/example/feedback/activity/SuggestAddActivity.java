@@ -62,7 +62,7 @@ public class SuggestAddActivity extends AppCompatActivity {
 
     private void add() {
         if (content.getText().toString().equals("")){
-            ToastUtils.show("请填写内容");
+            FeedBackInit.getInstance().toast("请填写内容");
             return;
         }
 
@@ -72,7 +72,7 @@ public class SuggestAddActivity extends AppCompatActivity {
         if (feedbackid == -1){
 
             if (title.getText().toString().equals("")){
-                ToastUtils.show("请填写标题");
+                FeedBackInit.getInstance().toast("请填写标题");
                 return;
             }
             map.put("userid",userId);

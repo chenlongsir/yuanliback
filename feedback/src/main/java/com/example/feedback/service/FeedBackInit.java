@@ -31,9 +31,16 @@ public class FeedBackInit {
         return feedBack.getAppName();
     }
 
+
+    public void toast(String msg) {
+         feedBack.toast(msg);
+    }
+
     public interface FeedBack{
         String getName();
         String getAccount();
         String getAppName();
+
+        void toast(String msg);
     }
 }

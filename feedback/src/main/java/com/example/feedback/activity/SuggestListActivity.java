@@ -19,7 +19,6 @@ import com.example.feedback.service.FeedBackInit;
 import com.example.feedback.service.NetSubscribe;
 import com.example.feedback.service.RetrofitHelper;
 import com.example.feedback.service.entity.SuggestListBean;
-import com.hjq.toast.ToastUtils;
 import com.jwenfeng.library.pulltorefresh.BaseRefreshListener;
 import com.jwenfeng.library.pulltorefresh.PullToRefreshLayout;
 
@@ -46,7 +45,6 @@ public class SuggestListActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gt_activity_suggest_list);
-        ToastUtils.init(getApplication());
 //        GTUtils.setImmersionStatusBar(this);
         initView();
     }

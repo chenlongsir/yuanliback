@@ -16,13 +16,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.feedback.R;
 import com.example.feedback.adapter.ReplyAdapter;
+import com.example.feedback.service.FeedBackInit;
 import com.example.feedback.service.NetSubscribe;
 import com.example.feedback.service.RetrofitHelper;
 import com.example.feedback.service.entity.BaseResultBean;
 import com.example.feedback.service.entity.ReplyBean;
 import com.example.feedback.service.entity.SuggestDetailBean;
 import com.example.feedback.service.entity.SuggestListBean;
-import com.hjq.toast.ToastUtils;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -196,7 +196,7 @@ public class SuggestDetailActivity extends AppCompatActivity {
                     @Override
                     public void onNext(BaseResultBean baseBean) {
                         if (baseBean.isIssucc()) {
-                            ToastUtils.show("服务已结束");
+                            FeedBackInit.getInstance().toast("服务已结束");
                             setResult(RESULT_OK);
                             finish();
                         }
