@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+
+    <color name="gt_bg_common">#ffffff</color>
+    <color name="gt_bg_edit_color">#8D8D8D</color>
+    <color name="gt_bg_reply_color">#e3e3e3</color>
+    <color name="gt_check_color">#2B85FF</color>
+    <color name="gt_main_color">#2B85FF</color>
+    <color name="gt_progress_color">#6d6d6d</color>
+    <color name="gt_text_btn_color">#ffffff</color>
+    <color name="gt_text_color1">#000000</color>
+    <color name="gt_text_color2">#8D8D8D</color>
+    <color name="gt_title_bg_color">#2B85FF</color>
+    <color name="gt_title_txt_color">#ffffff</color>
+</resources>

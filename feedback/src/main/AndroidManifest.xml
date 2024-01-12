@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.feedback" >
+
+    <application>
+        <activity android:name=".activity.SuggestAddActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.SuggestDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.SuggestListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

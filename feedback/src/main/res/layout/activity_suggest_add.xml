@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/gt_title_bg_color">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_back"
+            android:padding="12dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/back"
+            card_view:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="反馈详情"
+            android:textColor="@color/gt_title_txt_color"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="问题标题"
+            android:layout_margin="24dp"
+            android:textSize="14dp"/>
+
+        <EditText
+            android:paddingTop="10dp"
+            android:id="@+id/f_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="请输入标题"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="12dp"
+            android:paddingLeft="20dp"
+            android:background="#F3F5F8"
+            android:maxLines="20"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="问题描述"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/f_edit"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:hint="具体清晰的描述有助于我们快速解决您的问题"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="12dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="130dp"
+        android:background="#F3F5F8"
+        android:maxLines="20"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="362dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:gravity="center"
+        android:id="@+id/f_sub"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="提交"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:background="@drawable/gt_btn"
+        android:layout_marginBottom="80px"/>
+
+</LinearLayout>
